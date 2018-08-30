@@ -15,7 +15,7 @@ void remove(std::string& str, const char& toRemove)
 	str.resize(str.size() - 1);
 }
 
-bool coExists(std::string s1, std::string s2) {
+bool coExists(std::string& s1, std::string s2) {
 	// Tests if s2 is exactly there in s1. For example, if s1 = codder and s2 = dcoder, then it returns true as dcoder is jumbled form of codder..
 	// If s1 = code, s2 = dcoder, it returns false;
 
