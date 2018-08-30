@@ -110,12 +110,12 @@ std::string sortString(std::string& str) {
 	// Sorts a string on the basis of ASCII values; For example "dcoDer" returns "Dcdeor".
 
 	std::vector<int> ascii;
-	for (int i = 0; i < str.size(); i++) {
+	for (std::size_t i = 0; i < str.size(); i++) {
 		ascii.push_back((int)str[i]);
 	}
 	std::sort(ascii.begin(), ascii.end());
 	str.clear();
-	for (int i = 0; i < ascii.size(); i++) {
+	for (std::size_t i = 0; i < ascii.size(); i++) {
 		str += (char)ascii[i];
 	}
 	return str;
