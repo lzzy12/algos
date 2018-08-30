@@ -79,7 +79,19 @@ int majorityNum(int arr[], int size) {
 	return result;
 }
 
-std::vector<bool> SieveOfEratosthenes(int n) {
+std::vector<bool> sieveOfEratosthenes(int n) {
+	// Implementation of Sieve Of Eratosthenes algorithm for finding first prime numbers until n;
+	/* Sample use case:
+	 *	int main()
+	 *{
+	 * std::vector<bool> x = sieveOfEratosthenes(30);
+	 * for(std::size_t i = 0; i < x.size(); i++)
+	 *	{
+	 *	    if(x[i]) // if x[i] is true
+	 *		   std::cout << i;
+	 *	}
+	 *}
+	*/
 	std::vector<bool> prime;
 	for (int i = 0; i <= n; i++) {
 		prime.push_back(true);
@@ -95,7 +107,7 @@ std::vector<bool> SieveOfEratosthenes(int n) {
 }
 
 std::string sortString(std::string& str) {
-	// Sorts a string on the basis of ASCII values; For example "dcoDer" returns "Dcdeor"
+	// Sorts a string on the basis of ASCII values; For example "dcoDer" returns "Dcdeor".
 
 	std::vector<int> ascii;
 	for (int i = 0; i < str.size(); i++) {
