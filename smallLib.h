@@ -3,7 +3,7 @@
 #include <string>
 #include <array>
 #include <vector>
-
+namespace slib{
 void remove(std::string& str, const char& toRemove) 
 {
 	// Removes the content of toRemove from str. for example, if str = "dog" and toRemove = 'o', str becomes dg and is returned;
@@ -119,4 +119,5 @@ std::string sortString(std::string& str) {
 		str += (char)ascii[i];
 	}
 	return str;
+}
 }
