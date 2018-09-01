@@ -120,4 +120,14 @@ std::string sortString(std::string& str) {
 	}
 	return str;
 }
+	int integerMultiplyCalc(float input) {
+	// Returns the smallest number which when multiplied by input, makes the input an integer. 
+	// For eg. if input = 1.5, 1.5 * 2 = 3, 3 is an integer, so 2 is returned;
+	int n = 0;
+	while (input != (int)input) {
+		n++;
+		input *= n;
+	}
+	return n;
+}
 }
